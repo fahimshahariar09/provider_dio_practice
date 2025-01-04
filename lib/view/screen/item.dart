@@ -15,3 +15,18 @@ class Item extends StatelessWidget {
     );
   }
 }
+// body: itemProvider.isLoading
+// ? Center(child: CircularProgressIndicator())
+//     : ListView.builder(
+// itemCount: itemProvider.items.length,
+// itemBuilder: (context, index) {
+// final item = itemProvider.items[index];
+// return ListTile(
+// title: Text(item.name),
+// );
+// },
+// ),
+// floatingActionButton: FloatingActionButton(
+// onPressed: () => itemProvider.fetchItems(),
+// child: Icon(Icons.refresh),
+// ),
