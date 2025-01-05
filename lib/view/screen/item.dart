@@ -12,6 +12,9 @@ class Item extends StatelessWidget {
       appBar: AppBar(
         title: Text("Items"),
       ),
+      body: ListView.builder(itemBuilder: (context , index){
+        return ListTile();
+      }),
     );
   }
 }
