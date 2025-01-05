@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:provider_dio_practice/controller/ui_controller/item.dart';
 
 void main() {
-  runApp(const MyApp()
-  //     ChangeNotifierProvider(
-  //     create: (_) => ItemProvider(),
-  // child: MyApp(),
-  // ),
+  runApp(
+    ChangeNotifierProvider(
+      create: (_) => ItemProvider(),
+      child: MyApp(),
+    ),
   );
 }
 
@@ -16,8 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-     // home: const MyHomePage(),
-    );
+        // home: const MyHomePage(),
+        );
   }
 }
-
