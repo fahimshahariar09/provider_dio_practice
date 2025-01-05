@@ -12,14 +12,16 @@ class Item extends StatelessWidget {
       appBar: AppBar(
         title: Text("Items"),
       ),
-      body: ListView.builder(
-          itemCount: itemProvider.items.length,
-          itemBuilder: (context, index) {
-            final item = itemProvider.items[index];
-            return ListTile(
-              title: Text(item.name),
-            );
-          }),
+      body: itemProvider.isLoading
+          ? CircularProgressIndicator()
+          : ListView.builder(
+              itemCount: itemProvider.items.length,
+              itemBuilder: (context, index) {
+                final item = itemProvider.items[index];
+                return ListTile(
+                  title: Text(item.name),
+                );
+              }),
     );
   }
 }
