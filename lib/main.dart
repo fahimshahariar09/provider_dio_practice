@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_dio_practice/controller/ui_controller/item.dart';
+import 'package:provider_dio_practice/view/screen/item.dart';
 
 void main() {
   runApp(
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        // home: const MyHomePage(),
+         home:  Item(),
         );
   }
 }
