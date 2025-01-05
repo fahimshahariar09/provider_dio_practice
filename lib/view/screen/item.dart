@@ -13,7 +13,7 @@ class Item extends StatelessWidget {
         title: Text("Items"),
       ),
       body: itemProvider.isLoading
-          ? CircularProgressIndicator()
+          ? Center(child: CircularProgressIndicator())
           : ListView.builder(
               itemCount: itemProvider.items.length,
               itemBuilder: (context, index) {
