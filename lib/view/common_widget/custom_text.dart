@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
 
 class CustomText extends StatelessWidget {
-  const CustomText({super.key, required this.text, this.fontColor, this.fontSize});
+  const CustomText(
+      {super.key,
+      required this.text,
+      this.fontColor,
+      this.fontSize,
+      this.fontWeight,
+      this.maxline});
 
   final String text;
   final Color? fontColor;
   final double? fontSize;
+  final FontWeight? fontWeight;
+  final int? maxline;
 
   @override
   Widget build(BuildContext context) {
@@ -15,9 +23,9 @@ class CustomText extends StatelessWidget {
       style: TextStyle(
           color: fontColor,
           fontSize: fontSize ?? 15,
-          fontWeight: FontWeight.normal,
+          fontWeight: fontWeight ?? FontWeight.normal,
           fontFamily: "RobotoSerif"),
-      maxLines: 1,
+      maxLines: maxline ?? 1,
     );
   }
 }
