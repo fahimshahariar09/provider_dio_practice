@@ -1,10 +1,12 @@
 import 'package:flutter/cupertino.dart';
 
 class CustomText extends StatelessWidget {
-  const CustomText({super.key});
+  const CustomText({super.key, required this.text});
+
+  final String text;
 
   @override
   Widget build(BuildContext context) {
-    return Text("data");
+    return Text(text);
   }
 }
