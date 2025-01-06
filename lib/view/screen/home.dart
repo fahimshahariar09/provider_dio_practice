@@ -9,6 +9,11 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text("data"),
       ),
+      body: Column(
+        children: [
+          Text("data")
+        ],
+      ),
     );
   }
 }
