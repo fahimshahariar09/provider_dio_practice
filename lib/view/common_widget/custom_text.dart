@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class CustomText extends StatelessWidget {
   const CustomText({super.key, required this.text});
@@ -7,6 +7,14 @@ class CustomText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(text);
+    return Text(
+      text,
+      style: TextStyle(
+          color: Colors.white,
+          fontSize: 15,
+          fontWeight: FontWeight.normal,
+          fontFamily: "RobotoSerif"),
+      maxLines: 1,
+    );
   }
 }
