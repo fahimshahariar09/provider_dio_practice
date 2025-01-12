@@ -18,7 +18,6 @@ class CustomText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      textDirection: TextDecoration.lineThrough,
       text,
       style: TextStyle(
           color: fontColor,
