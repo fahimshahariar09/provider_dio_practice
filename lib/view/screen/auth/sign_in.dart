@@ -11,10 +11,13 @@ class Sig extends StatelessWidget {
         centerTitle: true,
       ),
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-
-          ],
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          child: Column(
+            children: [
+              Text("Email"),
+            ],
+          ),
         ),
       ),
     );
