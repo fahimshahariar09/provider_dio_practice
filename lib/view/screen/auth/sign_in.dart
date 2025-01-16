@@ -16,6 +16,11 @@ class Sig extends StatelessWidget {
           child: Column(
             children: [
               Text("Email"),
+              TextField(),
+              Text("Email"),
+              TextField(),
+              Text("Email"),
+              TextField(),
             ],
           ),
         ),
