@@ -10,6 +10,13 @@ class Sig extends StatelessWidget {
         title: Text("Sign in"),
         centerTitle: true,
       ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+
+          ],
+        ),
+      ),
     );
   }
 }
