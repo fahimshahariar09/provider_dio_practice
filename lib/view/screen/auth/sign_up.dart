@@ -6,6 +6,11 @@ class SignUp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Sign Up"),
+        centerTitle: true,
+      ),
+    );
   }
 }
