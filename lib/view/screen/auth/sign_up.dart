@@ -17,8 +17,10 @@ class SignUp extends StatelessWidget {
             children: [
               Text("email"),
               TextField(),
+              SizedBox(height: 10),
               Text("phone"),
               TextField(),
+              SizedBox(height: 10),
               Text("password"),
               TextField(),
             ],
