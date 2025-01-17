@@ -11,12 +11,15 @@ class SignUp extends StatelessWidget {
         title: Text("Sign Up"),
         centerTitle: true,
       ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 10),
-        child: Column(
-          children: [
-
-          ],
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          child: Column(
+            children: [
+              Text("email"),
+              TextField(),
+            ],
+          ),
         ),
       ),
     );
