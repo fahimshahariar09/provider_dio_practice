@@ -17,8 +17,11 @@ class Sig extends StatelessWidget {
             children: [
               Text("Email"),
               TextField(),
+              SizedBox(height: 10),
               Text("password"),
               TextField(),
+              SizedBox(height: 10),
+
             ],
           ),
         ),
