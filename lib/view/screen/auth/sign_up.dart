@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class SignUp extends StatelessWidget {
@@ -17,6 +16,8 @@ class SignUp extends StatelessWidget {
           child: Column(
             children: [
               Text("email"),
+              TextField(),
+              Text("phone"),
               TextField(),
             ],
           ),
