@@ -19,6 +19,8 @@ class SignUp extends StatelessWidget {
               TextField(),
               Text("phone"),
               TextField(),
+              Text("password"),
+              TextField(),
             ],
           ),
         ),
