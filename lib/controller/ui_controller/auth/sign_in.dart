@@ -1,2 +1,7 @@
 
-class SignInController extends GetxController{}
+import 'package:get/get.dart';
+
+class SignInController extends GetxController{
+
+  RxBool isLoading = true.obs;
+}
