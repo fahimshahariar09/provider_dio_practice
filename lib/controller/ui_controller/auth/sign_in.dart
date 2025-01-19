@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:provider_dio_practice/controller/api_controller/auth/sign_in.dart';
 
 class SignInController extends GetxController {
+  final formKey = GlobalKey<FormState>();
   RxBool isLoading = true.obs;
   TextEditingController emailController = TextEditingController();
   TextEditingController passController = TextEditingController();
