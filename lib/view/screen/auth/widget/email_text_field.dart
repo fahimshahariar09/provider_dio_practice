@@ -19,6 +19,12 @@ class EmailTextField extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           borderSide: BorderSide(color: Colors.red, width: 1),
         ),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10),
+          borderSide: BorderSide(color: Colors.red, width: 1),
+        ),
+        hintText: "Email",
+        prefixIcon: Icon(Icons.email)
       ),
     );
   }
