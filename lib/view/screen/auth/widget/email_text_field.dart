@@ -26,6 +26,14 @@ class EmailTextField extends StatelessWidget {
         hintText: "Email",
         prefixIcon: Icon(Icons.email)
       ),
+      validator: (value){
+        if(value == "" || value == null){
+          return "E,ail can't be empty";
+        }else if(!(value.toString().contains('.') || value.contains("@"))){
+          return "Please your valid mail";
+        }
+        return null;
+      },
     );
   }
 }
