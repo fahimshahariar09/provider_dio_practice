@@ -32,7 +32,7 @@ class PasswordTextField extends StatelessWidget {
       ),
       validator: (value){
         if(value == "" || value == null){
-          return "E,ail can't be empty";
+          return "Email can't be empty";
         }else if(!(value.toString().contains('.') || value.contains("@"))){
           return "Please your valid mail";
         }

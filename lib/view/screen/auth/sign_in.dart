@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:provider_dio_practice/controller/ui_controller/auth/sign_in.dart';
+import 'package:provider_dio_practice/view/screen/auth/widget/email_text_field.dart';
+import 'package:provider_dio_practice/view/screen/auth/widget/password_text_field.dart';
 
 class Sig extends StatelessWidget {
   const Sig({super.key});
 
   @override
   Widget build(BuildContext context) {
+    SignInController signInController = Get.put(SignInController());
     return Scaffold(
       appBar: AppBar(
         title: Text("Sign in"),
@@ -16,12 +21,15 @@ class Sig extends StatelessWidget {
           child: Column(
             children: [
               Text("Email"),
-              TextField(),
+              EmailTextField(
+                emailController: signInController.emailController,
+              ),
               SizedBox(height: 10),
               Text("password"),
-              TextField(),
+              PasswordTextField(
+                passController: signInController.passController,
+              ),
               SizedBox(height: 10),
-
             ],
           ),
         ),
