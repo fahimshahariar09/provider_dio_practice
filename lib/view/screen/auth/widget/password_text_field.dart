@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
-class EmailTextField extends StatelessWidget {
-  const EmailTextField({super.key});
+class PasswordTextField extends StatelessWidget {
+  const PasswordTextField({super.key, required this.passController});
+
+  final TextEditingController passController;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: passController,
       decoration: InputDecoration(
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
@@ -23,7 +26,7 @@ class EmailTextField extends StatelessWidget {
             borderRadius: BorderRadius.circular(10),
             borderSide: BorderSide(color: Colors.red, width: 1),
           ),
-          hintText: "Email",
+          hintText: "Password",
           prefixIcon: Icon(Icons.email)
       ),
       validator: (value){
