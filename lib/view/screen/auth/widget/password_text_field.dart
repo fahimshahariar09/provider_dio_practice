@@ -27,7 +27,8 @@ class PasswordTextField extends StatelessWidget {
             borderSide: BorderSide(color: Colors.red, width: 1),
           ),
           hintText: "Password",
-          prefixIcon: Icon(Icons.email)
+          prefixIcon: Icon(Icons.lock),
+        suffixIcon: Icon(Icons.remove_red_eye_outlined),
       ),
       validator: (value){
         if(value == "" || value == null){
