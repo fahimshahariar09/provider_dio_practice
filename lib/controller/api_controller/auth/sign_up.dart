@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 class SignUpService {
-  static Future signinService(
+  static Future signupService(
       {required String email, required String pass}) async {
     try {
       await Future.delayed(Duration(seconds: 2));

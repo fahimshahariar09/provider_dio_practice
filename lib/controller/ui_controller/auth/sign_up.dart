@@ -14,5 +14,10 @@ class SignUpController extends GetxController {
         email: emailController.text, pass: passController.text);
     isLoading.value = false;
   }
+  @override
+  void onInit() {
+    signupFun();
+    super.onInit();
+  }
 
 }
