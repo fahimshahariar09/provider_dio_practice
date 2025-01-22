@@ -5,6 +5,9 @@ class CustomBackButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Icon(Icons.arrow_back, size: 25);
+    return Icon(
+      Icons.arrow_back,
+      size: 25,
+    );
   }
 }
