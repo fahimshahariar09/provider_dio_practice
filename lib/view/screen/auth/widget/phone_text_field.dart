@@ -26,15 +26,15 @@ class PhoneTextField extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           borderSide: BorderSide(color: Colors.red, width: 1),
         ),
-        hintText: "Password",
+        hintText: "Phone",
         prefixIcon: Icon(Icons.lock),
         suffixIcon: Icon(Icons.remove_red_eye_outlined),
       ),
       validator: (value) {
         if (value == "" || value == null) {
-          return "Email can't be empty";
+          return "Phone can't be empty";
         } else if (!(value.toString().contains('.') || value.contains("@"))) {
-          return "Please your valid mail";
+          return "Please your valid Phone";
         }
         return null;
       },
