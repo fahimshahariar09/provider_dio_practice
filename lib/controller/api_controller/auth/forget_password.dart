@@ -1,7 +1,10 @@
 import 'dart:developer';
 
-class ForgetPasswordService{
-  static Future forgetpasswordService(){
-    try{}catch(e){log("error $e");}
+class ForgetPasswordService {
+  static Future<bool> forgetpasswordService() {
+    try {} catch (e) {
+      log("error $e");
+    }
+    return false;
   }
 }
