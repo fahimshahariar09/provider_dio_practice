@@ -1,1 +1,5 @@
-class NewPasswordService{}
+class NewPasswordService{
+  static Future newpassswordService()async{
+    try{}
+  }
+}
