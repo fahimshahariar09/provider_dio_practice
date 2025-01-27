@@ -9,10 +9,13 @@ class NewPassword extends StatelessWidget {
       appBar: AppBar(
         title: Text("New Password"),
       ),
-      body: Column(
-        children: [
-
-        ],
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          child: Column(
+            children: [],
+          ),
+        ),
       ),
     );
   }
