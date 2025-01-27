@@ -9,6 +9,11 @@ class NewPassword extends StatelessWidget {
       appBar: AppBar(
         title: Text("New Password"),
       ),
+      body: Column(
+        children: [
+
+        ],
+      ),
     );
   }
 }
