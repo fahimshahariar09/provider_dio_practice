@@ -9,7 +9,8 @@ class NewPassword extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    NewPasswordController newPasswordController = Get.put(NewPasswordController());
+    NewPasswordController newPasswordController =
+        Get.put(NewPasswordController());
     return Scaffold(
       appBar: AppBar(
         title: Text("New Password"),
@@ -19,11 +20,13 @@ class NewPassword extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Column(
             children: [
-             PasswordTextField(passController: newPasswordController.passwordController),
-             SizedBox(height: 10),
-             PasswordTextField(passController: newPasswordController.newpasswordController),
+              PasswordTextField(
+                  passController: newPasswordController.passwordController),
+              SizedBox(height: 10),
+              PasswordTextField(
+                  passController: newPasswordController.newpasswordController),
               SizedBox(height: 20),
-              CustomButton(buttonName: "change password", onTap: (){})
+              CustomButton(buttonName: "change password", onTap: () {})
             ],
           ),
         ),

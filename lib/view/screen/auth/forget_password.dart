@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:provider_dio_practice/controller/ui_controller/auth/forget_password.dart';
 import 'package:provider_dio_practice/view/screen/auth/widget/email_text_field.dart';
 
 class ForgetPassword extends StatelessWidget {
@@ -6,6 +8,8 @@ class ForgetPassword extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    ForgetPasswordController forgetPasswordController =
+        Get.put(ForgetPasswordController());
     return Scaffold(
       appBar: AppBar(
         title: Text("Forget Password"),
@@ -14,7 +18,7 @@ class ForgetPassword extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 15),
         child: Column(
           children: [
-            // EmailTextField(emailController: emailController)
+             EmailTextField(emailController: emailController)
           ],
         ),
       ),
