@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider_dio_practice/controller/ui_controller/auth/forget_password.dart';
+import 'package:provider_dio_practice/view/common_widget/custom_button.dart';
 import 'package:provider_dio_practice/view/screen/auth/widget/email_text_field.dart';
 
 class ForgetPassword extends StatelessWidget {
@@ -18,9 +19,10 @@ class ForgetPassword extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 15),
         child: Column(
           children: [
-             EmailTextField(emailController: forgetPasswordController.emailController),
+            EmailTextField(
+                emailController: forgetPasswordController.emailController),
             SizedBox(height: 15),
-
+            CustomButton(buttonName: "Continue", onTap: () {})
           ],
         ),
       ),
