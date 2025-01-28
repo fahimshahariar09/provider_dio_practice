@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provider_dio_practice/view/screen/auth/widget/password_text_field.dart';
 
 class NewPassword extends StatelessWidget {
   const NewPassword({super.key});
@@ -14,12 +15,7 @@ class NewPassword extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Column(
             children: [
-              Text("data"),
-              Text("data"),
-              Text("data"),
-              Text("data"),Text("data"),
-              Text("data"),
-              Text("data"),
+             PasswordTextField(passController: passController)
             ],
           ),
         ),
