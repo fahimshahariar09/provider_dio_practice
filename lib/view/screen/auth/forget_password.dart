@@ -18,7 +18,9 @@ class ForgetPassword extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 15),
         child: Column(
           children: [
-             EmailTextField(emailController: emailController)
+             EmailTextField(emailController: forgetPasswordController.emailController),
+            SizedBox(height: 15),
+
           ],
         ),
       ),
