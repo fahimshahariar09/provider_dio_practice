@@ -22,6 +22,7 @@ class Item extends StatelessWidget {
                   title: Text(item.name),
                   leading: CircleAvatar(),
                   subtitle: Text("data"),
+                  trailing: CircleAvatar(),
                 );
               }),
     );
