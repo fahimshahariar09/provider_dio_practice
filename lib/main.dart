@@ -4,12 +4,7 @@ import 'package:provider_dio_practice/controller/ui_controller/item.dart';
 import 'package:provider_dio_practice/view/screen/item.dart';
 
 void main() {
-  runApp(
-    ChangeNotifierProvider(
-      create: (_) => ItemProvider(),
-      child: MyApp(),
-    ),
-  );
+  runApp(ChangeNotifierProvider(create: (_) => ItemProvider(), child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -18,8 +13,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-         home:  Item(),
-        );
+    return MaterialApp(home: Item());
   }
 }

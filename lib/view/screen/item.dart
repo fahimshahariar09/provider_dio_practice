@@ -20,6 +20,8 @@ class Item extends StatelessWidget {
                 final item = itemProvider.items[index];
                 return ListTile(
                   title: Text(item.name),
+                  leading: CircleAvatar(),
+                  subtitle: Text("data"),
                 );
               }),
     );
