@@ -8,7 +8,9 @@ class LoginProvider with ChangeNotifier {
   final TextEditingController password = TextEditingController();
   bool checkBox = true;
   Future postLogin() async {
-    try {} catch (e) {
+    try {
+      await Future.delayed(Duration(seconds: 2));
+    } catch (e) {
       log("error: $e");
     }
   }
