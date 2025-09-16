@@ -4,8 +4,8 @@ import 'package:provider_dio_practice/controller/ui_controller/auth/sign_in.dart
 import 'package:provider_dio_practice/view/screen/auth/widget/email_text_field.dart';
 import 'package:provider_dio_practice/view/screen/auth/widget/password_text_field.dart';
 
-class Sig extends StatelessWidget {
-  const Sig({super.key});
+class Sign extends StatelessWidget {
+  const Sign({super.key});
 
   @override
   Widget build(BuildContext context) {
