@@ -14,10 +14,20 @@ class ProfileScreen extends StatelessWidget {
       body: Column(
         children: [
           ProfileViewCard(
-            title: "title",
+            title: "Profile",
             icon: Icon(Icons.person),
             onTap: () {},
-          )
+          ),
+          ProfileViewCard(
+            title: "Change Password",
+            icon: Icon(Icons.person),
+            onTap: () {},
+          ),
+          ProfileViewCard(
+            title: "Teams and Conditions",
+            icon: Icon(Icons.person),
+            onTap: () {},
+          ),
         ],
       ),
     );
