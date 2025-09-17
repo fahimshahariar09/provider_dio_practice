@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provider_dio_practice/view/screen/profile/widget/profile_view_card.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -12,7 +13,11 @@ class ProfileScreen extends StatelessWidget {
       ),
       body: Column(
         children: [
-
+          ProfileViewCard(
+            title: "title",
+            icon: Icon(Icons.person),
+            onTap: () {},
+          )
         ],
       ),
     );
