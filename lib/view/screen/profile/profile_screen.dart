@@ -11,24 +11,34 @@ class ProfileScreen extends StatelessWidget {
         title: Text('Profile'),
         leading: Icon(Icons.arrow_back),
       ),
-      body: Column(
-        children: [
-          ProfileViewCard(
-            title: "Profile",
-            icon: Icon(Icons.person),
-            onTap: () {},
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 15),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+                SizedBox(height: 10),
+              ProfileViewCard(
+                title: "Profile",
+                icon: Icon(Icons.person),
+                onTap: () {},
+              ),
+              SizedBox(height: 10),
+
+              ProfileViewCard(
+                title: "Change Password",
+                icon: Icon(Icons.person),
+                onTap: () {},
+              ),
+              SizedBox(height: 10),
+
+              ProfileViewCard(
+                title: "Teams and Conditions",
+                icon: Icon(Icons.person),
+                onTap: () {},
+              ),
+            ],
           ),
-          ProfileViewCard(
-            title: "Change Password",
-            icon: Icon(Icons.person),
-            onTap: () {},
-          ),
-          ProfileViewCard(
-            title: "Teams and Conditions",
-            icon: Icon(Icons.person),
-            onTap: () {},
-          ),
-        ],
+        ),
       ),
     );
   }
