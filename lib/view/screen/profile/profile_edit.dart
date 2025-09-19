@@ -22,7 +22,24 @@ class _ProfileEditState extends State<ProfileEdit> {
           children: [
             CustomText(text: "Name"),
             SizedBox(height: 10),
-            TextField()
+            TextField(
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  enabledBorder: OutlineInputBorder(),
+                  focusedBorder: OutlineInputBorder(),
+                  hintText: "Name"),
+            ),
+            SizedBox(height: 10),
+            CustomText(text: "Email"),
+            SizedBox(height: 10),
+            TextField(
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  enabledBorder: OutlineInputBorder(),
+                  focusedBorder: OutlineInputBorder(),
+                  hintText: "Email"),
+            ),
+            SizedBox(height: 10),
           ],
         ),
       ),
