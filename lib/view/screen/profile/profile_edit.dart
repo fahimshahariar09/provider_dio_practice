@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provider_dio_practice/view/common_widget/custom_text.dart';
 
 class ProfileEdit extends StatefulWidget {
   const ProfileEdit({super.key});
@@ -19,7 +20,9 @@ class _ProfileEditState extends State<ProfileEdit> {
         padding: const EdgeInsets.symmetric(horizontal: 15),
         child: Column(
           children: [
-
+            CustomText(text: "Name"),
+            SizedBox(height: 10),
+            TextField()
           ],
         ),
       ),
