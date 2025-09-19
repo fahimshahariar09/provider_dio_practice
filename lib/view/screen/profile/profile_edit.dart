@@ -40,6 +40,16 @@ class _ProfileEditState extends State<ProfileEdit> {
                   hintText: "Email"),
             ),
             SizedBox(height: 10),
+            CustomText(text: "Phone"),
+            SizedBox(height: 10),
+            TextField(
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  enabledBorder: OutlineInputBorder(),
+                  focusedBorder: OutlineInputBorder(),
+                  hintText: "Phone"),
+            ),
+            SizedBox(height: 10),
           ],
         ),
       ),
