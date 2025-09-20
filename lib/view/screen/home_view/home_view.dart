@@ -18,7 +18,14 @@ class _HomeViewState extends State<HomeView> {
       body: StreamBuilder(
           stream: _numberStreamController.stream,
           builder: (context, snapshot) {
-            return Card();
+            return Card(
+              color: Colors.blue,
+              child: Column(
+                children: [
+                  Text("data"),
+                ],
+              ),
+            );
           }),
     );
   }
