@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 class HomeView extends StatefulWidget {
@@ -8,8 +10,16 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
+  late StreamController<int> _numberStreamController;
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: StreamBuilder(
+          stream: _numberStreamController.stream,
+          builder: (context, snapshot) {
+            return Card();
+          }),
+    );
   }
 }

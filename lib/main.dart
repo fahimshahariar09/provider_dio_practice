@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_dio_practice/controller/ui_controller/item.dart';
+import 'package:provider_dio_practice/view/screen/home_view/home_view.dart';
 import 'package:provider_dio_practice/view/screen/item.dart';
 import 'package:provider_dio_practice/view/screen/profile/profile_screen.dart';
 
@@ -13,7 +14,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false, home: ProfileScreen());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: HomeView());
   }
 }
