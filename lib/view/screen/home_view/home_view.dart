@@ -18,11 +18,23 @@ class _HomeViewState extends State<HomeView> {
       body: StreamBuilder(
           stream: _numberStreamController.stream,
           builder: (context, snapshot) {
+            if(snapshot.hasData){
+              return Text("True");
+            } else if (snapshot.hasError){
+              return Text("False");
+            }
             return Card(
               color: Colors.blue,
               child: Column(
                 children: [
-                  Text("data"),
+                  Text(
+                    "Stream Builder",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w500),
+                  ),
+
                 ],
               ),
             );
