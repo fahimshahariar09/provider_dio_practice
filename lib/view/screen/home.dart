@@ -8,9 +8,8 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  // ফিউচার ফাংশন যা ডেটা ফেচ করবে (উদাহরণ হিসেবে সিমুলেটেড ডেটা)
   Future<String> fetchData() async {
-    await Future.delayed(const Duration(seconds: 2)); // সিমুলেটেড ডিলে
+    await Future.delayed(const Duration(seconds: 2));
     return "Data loaded successfully!";
   }
 
@@ -21,15 +20,13 @@ class _HomeState extends State<Home> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           FutureBuilder<String>(
-            future: fetchData(), // ফিউচার ফাংশন কল
+            future: fetchData(),
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.waiting) {
-                // ডেটা লোড হচ্ছে
                 return const Center(
                   child: CircularProgressIndicator(),
                 );
               } else if (snapshot.hasError) {
-                // এরর হ্যান্ডলিং
                 return Center(
                   child: Text(
                     "Error: ${snapshot.error}",
@@ -37,7 +34,6 @@ class _HomeState extends State<Home> {
                   ),
                 );
               } else if (snapshot.hasData) {
-                // ডেটা পাওয়া গেছে
                 return Card(
                   color: Colors.blue,
                   elevation: 4,
@@ -55,7 +51,6 @@ class _HomeState extends State<Home> {
                   ),
                 );
               }
-              // ডিফল্ট কেস (যদি কোনো ডেটা না থাকে)
               return const Card(
                 color: Colors.grey,
                 child: Padding(
